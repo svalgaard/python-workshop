@@ -34,7 +34,7 @@ def findSum(xs):
 
 # Test
 N = random.randint(1, 1000)
-print(findSum(range(N+1)), '==?', N*(N+1)//2)
+print(findSum(range(N+1)), '==?', N*(N-1)//2)
 
 
 #
@@ -53,8 +53,8 @@ def sortList(xs):
 # removeDuplicates
 #
 def removeDuplicates(xs):
-    '''removeDuplicates removes duplicate items from xs.
-    Items should be kept in the same order
+    '''removeDuplicates removes duplicate items from the list xs.
+    Items should be kept in the same order.
 
     removeDuplicates([3, 2, 4, 2, 6, 4]) => [3, 2, 4, 6]
     '''
