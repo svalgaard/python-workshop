@@ -34,7 +34,7 @@ def findSum(xs):
 
 # Test
 N = random.randint(1, 1000)
-print(findSum(range(N+1)), '==?', N*(N-1)//2)
+print(findSum(range(N+1)), '==?', N*(N+1)//2)
 
 
 #
