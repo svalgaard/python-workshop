@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 #
-# Requires requests, beautifulsoup4 and lxml
+# Requires beautifulsoup4 and lxml
 #
 
 import bs4
