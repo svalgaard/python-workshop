@@ -1,8 +1,10 @@
-#
+#! /usr/bin/env python3
 # a.py
 #
 import sys
 import sub.b
+import c
+
 
 print("In a.py")
 
@@ -10,8 +12,9 @@ print("In a.py")
 def main():
     print('In a.py main()')
 
-    print('sys.argv', sys.argv)
-    print('sub.b', sub.b.var)
+    print(f'sys.argv : {sys.argv}')
+    print(f'sub.b.var: {sub.b.var}')
+    print(f'c.var    : {c.var}')
 
 
 if __name__ == '__main__':
