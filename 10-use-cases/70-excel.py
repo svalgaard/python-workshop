@@ -7,7 +7,6 @@ import openpyxl
 
 
 def main():
-    global cell, row
     filename = sys.argv[1]
 
     print(f'Opening xlsx file {filename}')
