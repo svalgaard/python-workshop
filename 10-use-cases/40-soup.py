@@ -4,7 +4,7 @@
 #
 
 import bs4
-import urllib
+import urllib.request
 import os
 
 NEXT_URL = "https://download.nextcloud.com/desktop/releases/Windows/"
