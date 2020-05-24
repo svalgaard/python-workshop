@@ -6,21 +6,26 @@
 
 import random
 
+#
+# Shared variables
+#
+N = 11
+xs = list(range(1, N+1)) * 2  # The numbers 1 to N repeated twice
+random.shuffle(xs)  # shuffle the list
+print(f'xs = {xs}')
+
 
 #
 # findMin
 #
 def findMin(xs):
-    '''findMin return the SMALLEST number in the list xs'''
+    '''findMin returns the SMALLEST number in the list xs'''
     # FIXME Implement me
-    return 0
+    return -1
 
 
 # Test
-N = random.randint(1, 1000)
-xs = list(range(1, N+1))
-random.shuffle(xs)  # shuffle the list
-print(findMin(xs), '==?', 1)
+print(f'Smallest value found: {findMin(xs)} (expected 1)')
 
 
 #
@@ -33,8 +38,8 @@ def findSum(xs):
 
 
 # Test
-N = random.randint(1, 1000)
-print(findSum(range(N+1)), '==?', N*(N+1)//2)
+exp = 2 * N*(N+1)//2
+print(f'Sum of values: {findSum(xs)} (expected {exp})')
 
 
 #
